@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  max-width: 130rem;
+  padding: 0rem 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.chart {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.DashHead {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head > :nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.selectButton > select {
+  border: none;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background: var(--orange-gradient);
+}
