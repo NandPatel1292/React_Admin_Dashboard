@@ -6,7 +6,7 @@ const Dashboard = () => {
     <div className={css.container}>
       {/* left side */}
       <div className={css.chart}>
-        <div className={css.DashHead}>
+        <div className={`${css.DashHead} theme-container`}>
           <div className={css.head}>
             <span>dashboard</span>
             <div className={css.selectButton}>
