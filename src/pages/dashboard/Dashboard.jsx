@@ -1,5 +1,8 @@
 import React from "react";
 import css from "./Dashboard.module.css";
+import { cardData, groupNumber } from "../../data";
+import Statistics from "../../components/statistics/Statistics";
+import Orders from "../../components/orders/Orders";
 
 const Dashboard = () => {
   return (
@@ -17,11 +20,26 @@ const Dashboard = () => {
               </select>
             </div>
           </div>
-          <div className={css.card}>Cards</div>
+          <div className={css.card}>
+            {cardData.map((val, index) => (
+              <div className={css.cards} key={index}>
+                <div className={css.cardHead}>
+                  <span>{val.title}</span>
+                  <span>+{val.change}</span>
+                </div>
+                <div className={css.cardAmount}>
+                  <span>$</span>
+                  <span>{groupNumber(val.amount)}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+
+        <Statistics />
       </div>
 
-      <div className={css.order}>Orders</div>
+      <Orders />
     </div>
   );
 };

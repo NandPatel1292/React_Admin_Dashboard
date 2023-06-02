@@ -1,0 +1,75 @@
+.container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.head > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.stat {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: lightgrey;
+}
+
+.stat > :nth-child(1) {
+  font-size: 0.8rem;
+}
+
+.stat > :nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.order {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ord > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: lightgrey;
+  gap: 1rem;
+}
+
+.ord > :nth-child(1) {
+  margin-bottom: 0.8rem;
+}
+
+.ord > :nth-child(1) > :nth-child(1) {
+  font-size: 1rem;
+}
+
+.ord > :nth-child(1) > :nth-child(2) {
+  font-size: 0.8rem;
+  color: lawngreen;
+}
+
+.OrderChart {
+  width: 100%;
+}
+
+.OrderChart > :nth-child(1) {
+  text-align: center;
+}

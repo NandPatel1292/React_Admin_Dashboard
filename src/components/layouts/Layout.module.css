@@ -1,5 +1,5 @@
 .container {
-  /* height: 100vh; */
+  height: 100%;
   display: flex;
 }
 
@@ -85,4 +85,18 @@
   /* font: bold; */
   font-size: large;
   font-weight: bold;
+}
+
+.content {
+  display: flex;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+  /* margin-top: -4rem; */
+  /* -4 rem */
+}
+
+.content > div {
+  width: 100%;
+  min-width: 75vh;
 }
