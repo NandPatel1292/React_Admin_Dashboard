@@ -10,7 +10,7 @@ import { createEventId } from "../../data";
 const Calendar = () => {
   const { currentEvent } = useCalendar();
   const handleEvent = async (eve) => {
-    await Promise.resolve(setCurrentEvent(eve));
+    await Promise.resolve(currentEvent(eve));
   };
   const handleDateSelect = (info) => {
     let title = prompt("plese enter the title for the event");
