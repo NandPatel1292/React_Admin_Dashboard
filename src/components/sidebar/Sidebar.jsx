@@ -7,9 +7,18 @@ import { MdSpaceDashboard } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
+  const handleClick = () => {
+    window.location.href = "/dashboard";
+  };
+
   return (
     <div className={css.container}>
-      <img src="./circle.png" alt="logo image" className={css.logo} />
+      <img
+        src="./circle.png"
+        alt="logo image"
+        className={css.logo}
+        onClick={handleClick}
+      />
       <div className={css.menu}>
         <NavLink to="dashboard" className={css.item} title="Deshbord">
           <MdSpaceDashboard size={30} />
